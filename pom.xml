@@ -9,6 +9,13 @@
     <artifactId>playwright</artifactId>
     <version>1.63.0</version>
 </dependency>
+<!-- Source: https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+<dependency>
+    <groupId>org.seleniumhq.selenium</groupId>
+    <artifactId>selenium-java</artifactId>
+    <version>4.51.0</version>
+    <scope>compile</scope>
+</dependency>
   
   <dependency>
   	<groupId>FosterMooreFramework</groupId>

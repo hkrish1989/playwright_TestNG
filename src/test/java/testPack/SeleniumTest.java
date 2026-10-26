@@ -12,7 +12,7 @@ public class SeleniumTest {
 	SeleniumPage seleniumPage = new SeleniumPage(DriverManager.getDriver());
 	
 
-	@Test(groups = {"SeleniumTest"})
+	@Test(groups = {"SeleniumTests"})
 	public void newTest1() {
 		seleniumPage.openPage("https://demoqa.com/");
 		//DriverManager.quitDriver();
