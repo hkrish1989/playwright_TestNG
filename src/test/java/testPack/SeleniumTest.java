@@ -14,11 +14,9 @@ public class SeleniumTest {
 
 	@Test(groups = {"SeleniumTests"})
 	public void newTest1() {
-		seleniumPage.openPage("https://demoqa.com/");
-		//DriverManager.quitDriver();
-		
+		seleniumPage.openPage("https://demoqa.com/");	
 	}
-	@AfterMethod
+	@AfterMethod(alwaysRun = true)
 	public void tearDown() {
 		DriverManager.quitDriver();
 	}

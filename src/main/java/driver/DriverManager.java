@@ -11,7 +11,9 @@ public class DriverManager {
 	}
 	
 	private static void initialiseDriver() {
-		driverThreadLocal.set( new ChromeDriver());
+		WebDriver driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		driverThreadLocal.set(driver);
 	}
 	public static WebDriver getDriver() {
 		if (driverThreadLocal.get() == null) {
