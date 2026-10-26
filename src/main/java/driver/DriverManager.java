@@ -13,13 +13,13 @@ public class DriverManager {
 	private static void initialiseDriver() {
 		driverThreadLocal.set( new ChromeDriver());
 	}
-	private static WebDriver getDriver() {
+	public static WebDriver getDriver() {
 		if (driverThreadLocal.get() == null) {
 			initialiseDriver();
 		}
 		return driverThreadLocal.get();
 	}
-	private static void quitDriver() {
+	public static void quitDriver() {
 		if (driverThreadLocal.get() != null) {
 			driverThreadLocal.get().quit();
 			driverThreadLocal.remove();
